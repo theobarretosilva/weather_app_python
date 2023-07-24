@@ -25,8 +25,6 @@ def getWeather():
         current_time=local_time.strftime("%I:%M %p")
         clock.config(text=current_time)
         name.config(text="CURRENT WEATHER")
-        print(location.latitude)
-        print(location.longitude)
 
         #weather
         api="https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=4628860cab528f9a218d49d13efdbbd8"
@@ -102,7 +100,7 @@ h=Label(text="...", font=("arial", 20, "bold"), bg="#1ab5ef")
 h.place(x=280, y=430)
 
 d=Label(text="...", font=("arial", 20, "bold"), bg="#1ab5ef")
-d.place(x=450, y=430)
+d.place(x=425, y=430)
 
 p=Label(text="...", font=("arial", 20, "bold"), bg="#1ab5ef")
 p.place(x=670, y=430)
